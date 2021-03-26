@@ -35,7 +35,7 @@ class DNSQuery:
 
 
 if __name__ == '__main__':
-    ip = '192.168.6.2'
+    ip = input('input the ip and all queries all be solved to it')
     print('pyminifakeDNS:: dom.query. 60 IN A %s' % ip)
 
 
