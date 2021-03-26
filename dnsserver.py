@@ -13,7 +13,7 @@ class DNSQuery:
             lon = (data[ini])
             print('lon: ',lon)
             while lon != 0:
-                self.dominio += str(data[ini + 1:ini + lon + 1]) + '.'
+                self.dominio += (data[ini + 1:ini + lon + 1]).decode('utf8') + '.'
                 ini += lon + 1
                 lon = (data[ini])
 
